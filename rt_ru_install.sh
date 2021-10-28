@@ -191,7 +191,7 @@ rm ruTorrent-3.7.zip -f
 rm ruTorrent-master -rf
 #wget -O ruTorrent-3.7.zip https://bintray.com/novik65/generic/download_file?file_path=ruTorrent-3.7.zip
 #wget -O ruTorrent-3.7.zip https://github.com/Novik/ruTorrent/archive/refs/tags/v3.8.zip
-unzip -q rutorrent_3.7.zip
+unzip -q rutorrent-3.7.zip
 rm rutorrent_3.7/.htaccess -f
 mv rutorrent_3.7 ${webroot}/rutorrent
 rm ruTorrent-* -rf
