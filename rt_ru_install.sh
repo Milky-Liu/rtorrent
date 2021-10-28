@@ -122,14 +122,14 @@ cd /tmp
 echo "/usr/local/lib/" >> /etc/ld.so.conf
 ldconfig
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
-wget http://rtorrent.net/downloads/rtorrent-0.9.6.tar.gz
-tar -zxf rtorrent-0.9.6.tar.gz
-cd rtorrent-0.9.6
+wget https://github.com/rakshasa/rtorrent-archive/raw/master/rtorrent-0.9.8.tar.gz
+tar -zxf rtorrent-0.9.8.tar.gz
+cd rtorrent-0.9.8
 ./configure --with-xmlrpc-c
 make && make install
 #清理安装文件
 cd /tmp
-rm rtorrent-0.9.6* -rf
+rm rtorrent-0.9.8* -rf
 }
 
 rtorrent_config(){
